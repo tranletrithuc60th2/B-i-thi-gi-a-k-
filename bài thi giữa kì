@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+	int s; // so tien ban dau ban co
+	double l; // lai xuat
+	int k; // so tien ki vong 
+	
+	cout<<"nhap so tien von ban dau:";
+	cin>>s;
+	cout<<"lai xuat (%)";
+	cin>>l;
+	cout<<"so tien ki vong:";
+	cin>>k;
+	int e=0;
+	while(s<k)
+	{
+		s=s+(s*l/100);
+		e=e+1 ;
+	}
+	cout<<"so nam can de so tien goi dat den muc so tien ki vong:"<<e;
+	return 0;
+}	
